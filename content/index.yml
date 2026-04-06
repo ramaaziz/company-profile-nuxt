@@ -30,31 +30,131 @@ features:
         - "/images/penangananTower/kritis1.jpeg"
         - "/images/penangananTower/kritis2.jpeg"
         - "/images/penangananTower/kritis3.jpeg"
+        - "/images/penangananTower/kritis4.jpeg"
+        - "/images/penangananTower/kritis5.jpeg"
+        - "/images/penangananTower/kritis6.jpeg"
+        - "/images/penangananTower/kritis7.jpeg"
+        - "/images/penangananTower/kritis8.jpeg"
+        - "/images/penangananTower/kritis9.jpeg"
+        - "/images/penangananTower/kritis10.jpeg"
     - title: Pekerjaan Tower Emergency
       description: Pekerjaan tower emergency INDORAMA di Purwakarta
       image:
         light: "/images/card/cardimg4.png"
         dark: "/images/card/cardimg4.png"
+      projectImages:
+        - "/images/towerEmergency/PekTowerEmergency1.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency2.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency3.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency4.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency5.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency6.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency7.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency8.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency9.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency10.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency11.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency12.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency13.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency14.jpeg"
+        - "/images/towerEmergency/PekTowerEmergency15.jpeg"
     - title: Penggantian Kabel Power
       description: Penggantian kabel power dan pembuatan Duct untuk UPT Gresik
       image:
         light: "/images/card/cardimg3.png"
         dark: "/images/card/cardimg3.png"
+      projectImages:
+        - "images/penggantianGresik/penggantian kabel power gresik1.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik2.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik3.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik4.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik5.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik6.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik7.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik8.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik9.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik10.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik11.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik12.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik13.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik14.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik15.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik16.jpeg"
+        - "images/penggantianGresik/penggantian kabel power gresik17.jpeg"
     - title: Penggantian Proteksi Relay
       description: Pekerjaan penggantian proteksi relay untuk UPT Bandung
       image:
         light: "/images/card/cardimg5.png"
         dark: "/images/card/cardimg5.png"
+      projectImages:
+        - "images/penggantianRelay/PenggantianRelai1.jpeg"
+        - "images/penggantianRelay/PenggantianRelai2.jpeg"
+        - "images/penggantianRelay/PenggantianRelai3.jpeg"
+        - "images/penggantianRelay/PenggantianRelai4.jpeg"
+        - "images/penggantianRelay/PenggantianRelai5.jpeg"
+        - "images/penggantianRelay/PenggantianRelai6.jpeg"
+        - "images/penggantianRelay/PenggantianRelai7.jpeg"
+        - "images/penggantianRelay/PenggantianRelai8.jpeg"
+        - "images/penggantianRelay/PenggantianRelai9.jpeg"
+        - "images/penggantianRelay/PenggantianRelai10.jpeg"
+        - "images/penggantianRelay/PenggantianRelai11.jpeg"
+        - "images/penggantianRelay/PenggantianRelai12.jpeg"
+        - "images/penggantianRelay/PenggantianRelai13.jpeg"
+        - "images/penggantianRelay/PenggantianRelai14.jpeg"
+        - "images/penggantianRelay/PenggantianRelai15.jpeg"
+        - "images/penggantianRelay/PenggantianRelai16.jpeg"
+        - "images/penggantianRelay/PenggantianRelai17.jpeg"
+        - "images/penggantianRelay/PenggantianRelai18.jpeg"
     - title: Pekerjaan Ipal
       description: Pekerjaan IPAL dan Septic Tank untuk UPT Surabaya
       image:
         light: "/images/card/cardimg2.png"
         dark: "/images/card/cardimg2.png"
+      projectImages:
+        - "images/ipalSby/ipalSurabaya1.jpeg"
+        - "images/ipalSby/ipalSurabaya2.jpeg"
+        - "images/ipalSby/ipalSurabaya3.jpeg"
+        - "images/ipalSby/ipalSurabaya4.jpeg"
+        - "images/ipalSby/ipalSurabaya5.jpeg"
+        - "images/ipalSby/ipalSurabaya6.jpeg"
+        - "images/ipalSby/ipalSurabaya7.jpeg"
+        - "images/ipalSby/ipalSurabaya8.jpeg"
+        - "images/ipalSby/ipalSurabaya9.jpeg"
+        - "images/ipalSby/ipalSurabaya10.jpeg"
+        - "images/ipalSby/ipalSurabaya11.jpeg"
+        - "images/ipalSby/ipalSurabaya12.jpeg"
+        - "images/ipalSby/ipalSurabaya13.jpeg"
+        - "images/ipalSby/ipalSurabaya14.jpeg"
+        - "images/ipalSby/ipalSurabaya15.jpeg"
+        - "images/ipalSby/ipalSurabaya16.jpeg"
+        - "images/ipalSby/ipalSurabaya17.jpeg"
+        - "images/ipalSby/ipalSurabaya18.jpeg"
     - title: Pekerjaan Jumper SUTT
       description: Pekerjaan jumper Saluran Udara Tegangan Tinggi di Tambun
       image:
         light: "/images/card/cardimg6.png"
         dark: "/images/card/cardimg6.png"
+      projectImages:
+        - "images/jumperSUTT/jumperSutt1.jpeg"
+        - "images/jumperSUTT/jumperSutt2.jpeg"
+        - "images/jumperSUTT/jumperSutt3.jpeg"
+        - "images/jumperSUTT/jumperSutt4.jpeg"
+        - "images/jumperSUTT/jumperSutt5.jpeg"
+        - "images/jumperSUTT/jumperSutt6.jpeg"
+        - "images/jumperSUTT/jumperSutt7.jpeg"
+        - "images/jumperSUTT/jumperSutt8.jpeg"
+        - "images/jumperSUTT/jumperSutt9.jpeg"
+        - "images/jumperSUTT/jumperSutt10.jpeg"
+        - "images/jumperSUTT/jumperSutt11.jpeg"
+        - "images/jumperSUTT/jumperSutt12.jpeg"
+        - "images/jumperSUTT/jumperSutt13.jpeg"
+        - "images/jumperSUTT/jumperSutt14.jpeg"
+        - "images/jumperSUTT/jumperSutt15.jpeg"
+        - "images/jumperSUTT/jumperSutt16.jpeg"
+        - "images/jumperSUTT/jumperSutt17.jpeg"
+        - "images/jumperSUTT/jumperSutt18.jpeg"
+        - "images/jumperSUTT/jumperSutt19.jpeg"
+        - "images/jumperSUTT/jumperSutt20.jpeg"
 steps:
   title: Sertifikasi dan Standar [Kualitas]{.text-primary}
   description: Komitmen kami terhadap keunggulan operasional dibuktikan melalui kepatuhan ketat terhadap standar internasional. Kami memastikan setiap proyek infrastruktur memenuhi kriteria keamanan, efisiensi, dan keberlanjutan yang diakui secara global.
@@ -63,30 +163,26 @@ steps:
       description: Sistem Manajemen Mutu untuk memastikan kualitas layanan yang konsisten dan memuaskan pelanggan.
     - title: ISO 14001:2015
       description: Sistem Manajemen Lingkungan untuk mengelola dampak lingkungan dan mendukung pembangunan berkelanjutan.
-    - title: OHSAS 18001:2007
+    - title: ISO 45001:2018
       description: Sistem Manajemen Kesehatan dan Keselamatan Kerja untuk menciptakan lingkungan kerja yang aman dan sehat bagi karyawan.
 
   items:
-    - title: Connect Your IDE
-      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
+    - title: ISO 9001:2015
       image:
-        light: "/images/card/cardimg.png"
-        dark: "/images/card/cardimg.png"
-    - title: Track & Analyze
-      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
+        light: "/images/logo/logoISO9001.png"
+        dark: "/images/logo/logoISO9001.png"
+    - title: ISO 14001:2015
       image:
-        light: "/images/card/cardimg2.png"
-        dark: "/images/card/cardimg2.png"
-    - title: Optimize & Code Smarter
-      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
+        light: "/images/logo/logoISO14001.png"
+        dark: "/images/logo/logoISO14001.png"
+    - title: ISO 45001:2018
       image:
-        light: "/images/card/cardimg3.png"
-        dark: "/images/card/cardimg3.png"
-    - title: Connect Your IDE
-      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
+        light: "/images/logo/logoISO45001.png"
+        dark: "/images/logo/logoISO45001.png"
+    - title: SMK3
       image:
-        light: "/images/card/cardimg4.png"
-        dark: "/images/card/cardimg4.png"
+        light: "/images/logos/smk3.png"
+        dark: "/images/logos/smk3.png"
 
 pricing:
   title: Choose your [productivity]{.text-primary} path

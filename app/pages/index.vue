@@ -142,27 +142,26 @@ useSeoMeta({
                 </div>
               </template>
 
-              <div class="p-2">
-                <UCarousel
-                  v-slot="{ item }"
-                  loop
-                  arrows
-                  dots
-                  :autoplay="{ delay: 2000 }"
-                  :items="selectedItem.projectImages"
-                >
+              <UCarousel
+                v-slot="{ item }"
+                loop
+                dots
+                :autoplay="{ delay: 2000 }"
+                :items="selectedItem.projectImages"
+              >
+                <div class="flex items-center justify-center h-96 w-full">
                   <img
                     :src="item"
-                    width="234"
-                    height="234"
-                    class="rounded-lg"
+                    class="rounded-lg max-w-xs max-h-full object-cover"
                     loading="lazy"
                   />
-                </UCarousel>
-              </div>
+                </div>
+              </UCarousel>
 
-              <div class="p-6">
-                <p class="text-gray-600 dark:text-gray-400">
+              <div class="pt-16">
+                <p
+                  class="text-gray-600 dark:text-gray-400 items-center justify-center text-center"
+                >
                   {{ selectedItem.description }}
                 </p>
               </div>
@@ -177,7 +176,12 @@ useSeoMeta({
     <UPageSection
       id="steps"
       :description="page.steps.description"
-      class="relative overflow-hidden"
+      :features="page.steps.sertifikasi"
+      orientation="horizontal"
+      :ui="{
+        container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
+        features: 'gap-0 pl-5',
+      }"
     >
       <template #headline>
         <UColorModeImage
@@ -187,12 +191,9 @@ useSeoMeta({
         />
       </template>
       <template #title>
-        <MDC :value="page.steps.title" />
+        <MDC :value="page.steps.title" class="sm:*:leading-11 pl-5" />
       </template>
-      <template #sertifikasi>
-        <MDC :value="page.steps.sertifikasi.title" class="text-center" />
-      </template>
-      <template #features>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <UPageCard
           v-for="(step, index) in page.steps.items"
           :key="index"
@@ -216,7 +217,7 @@ useSeoMeta({
             </span>
           </div>
         </UPageCard>
-      </template>
+      </div>
     </UPageSection>
 
     <UPageSection
