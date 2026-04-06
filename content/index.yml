@@ -26,6 +26,10 @@ features:
       image:
         light: "/images/card/cardimg.png"
         dark: "/images/card/cardimg.png"
+      projectImages:
+        - "/images/penangananTower/kritis1.jpeg"
+        - "/images/penangananTower/kritis2.jpeg"
+        - "/images/penangananTower/kritis3.jpeg"
     - title: Pekerjaan Tower Emergency
       description: Pekerjaan tower emergency INDORAMA di Purwakarta
       image:

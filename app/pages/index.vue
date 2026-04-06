@@ -1,7 +1,13 @@
-<script setup lang="ts">
+<script setup>
 const { data: page } = await useAsyncData("index", () =>
   queryCollection("content").first(),
 );
+const isOpen = ref(false);
+const selectedItem = ref({});
+const openModal = (features) => {
+  selectedItem.value = features;
+  isOpen.value = true;
+};
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -102,6 +108,7 @@ useSeoMeta({
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
           spotlight
           spotlight-color="primary"
+          @click="openModal(features)"
         >
           <UColorModeImage
             v-if="features.image"
@@ -119,46 +126,50 @@ useSeoMeta({
             </span>
           </div>
         </UPageCard>
-      </template>
-      <UModal v-model="isOpen">
-        <UCard
-          v-if="selectedItem"
-          :ui="{ divide: 'divide-y-0', body: { base: 'p-0' } }"
-        >
-          <template #header>
-            <div class="flex items-center justify-between">
-              <h3 class="font-bold text-xl">{{ selectedItem.title }}</h3>
-              <UButton
-                color="gray"
-                variant="ghost"
-                icon="i-heroicons-x-mark-20-solid"
-                class="-my-1"
-                @click="isOpen = false"
-              />
-            </div>
+        <UModal v-model:open="isOpen">
+          <template #content>
+            <UCard>
+              <template #header>
+                <div class="flex items-center justify-between">
+                  <h3 class="font-bold text-xl">{{ selectedItem.title }}</h3>
+                  <UButton
+                    color="gray"
+                    variant="ghost"
+                    icon="i-heroicons-x-mark-20-solid"
+                    class="-my-1"
+                    @click="isOpen = false"
+                  />
+                </div>
+              </template>
+
+              <div class="p-2">
+                <UCarousel
+                  v-slot="{ item }"
+                  loop
+                  arrows
+                  dots
+                  :autoplay="{ delay: 2000 }"
+                  :items="selectedItem.projectImages"
+                >
+                  <img
+                    :src="item"
+                    width="234"
+                    height="234"
+                    class="rounded-lg"
+                    loading="lazy"
+                  />
+                </UCarousel>
+              </div>
+
+              <div class="p-6">
+                <p class="text-gray-600 dark:text-gray-400">
+                  {{ selectedItem.description }}
+                </p>
+              </div>
+            </UCard>
           </template>
-
-          <div class="p-2">
-            <UCarousel
-              v-if="selectedItem.projectImages"
-              :images="selectedItem.projectImages"
-            />
-
-            <UColorModeImage
-              v-else
-              :light="selectedItem.image?.light"
-              :dark="selectedItem.image?.dark"
-              class="w-full h-auto rounded-xl"
-            />
-          </div>
-
-          <div class="p-6">
-            <p class="text-gray-600 dark:text-gray-400">
-              {{ selectedItem.description }}
-            </p>
-          </div>
-        </UCard>
-      </UModal>
+        </UModal>
+      </template>
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
