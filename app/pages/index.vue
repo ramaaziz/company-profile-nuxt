@@ -26,11 +26,11 @@ useSeoMeta({
 
 <template>
   <div v-if="page" class="relative">
-    <div class="hidden lg:block">
+    <div>
       <UColorModeImage
-        light="/images/light/line-1.svg"
-        dark="/images/dark/line-1.svg"
-        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]"
+        light="/logos/logo-pjt.png"
+        dark="/logos/logo-pjt.png"
+        class="absolute left-1/2 -translate-x-1/2 top-15 pointer-events-none object-cover h-[250px] sm:h-[560px] opacity-50"
       />
     </div>
 

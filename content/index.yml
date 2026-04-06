@@ -181,8 +181,8 @@ steps:
         dark: "/images/logo/logoISO45001.png"
     - title: SMK3
       image:
-        light: "/images/logos/smk3.png"
-        dark: "/images/logos/smk3.png"
+        light: "/images/logo/smk3.png"
+        dark: "/images/logo/smk3.png"
 
 pricing:
   title: Choose your [productivity]{.text-primary} path
