@@ -161,65 +161,70 @@ steps:
   sertifikasi:
     - title: ISO 9001:2015
       description: Sistem Manajemen Mutu untuk memastikan kualitas layanan yang konsisten dan memuaskan pelanggan.
+
     - title: ISO 14001:2015
       description: Sistem Manajemen Lingkungan untuk mengelola dampak lingkungan dan mendukung pembangunan berkelanjutan.
+
     - title: ISO 45001:2018
       description: Sistem Manajemen Kesehatan dan Keselamatan Kerja untuk menciptakan lingkungan kerja yang aman dan sehat bagi karyawan.
+
+    - title: SMK3
+      description: Sistem Manajemen Keselamatan dan Kesehatan Kerja untuk memastikan keselamatan dan kesehatan kerja di seluruh proyek kami.
 
   items:
     - title: ISO 9001:2015
       image:
         light: "/images/logo/logoISO9001.png"
         dark: "/images/logo/logoISO9001.png"
+      sertificate:
+        - "/images/ISO9001.png"
     - title: ISO 14001:2015
       image:
         light: "/images/logo/logoISO14001.png"
         dark: "/images/logo/logoISO14001.png"
+      sertificate:
+        - "/images/ISO14001.png"
     - title: ISO 45001:2018
       image:
         light: "/images/logo/logoISO45001.png"
         dark: "/images/logo/logoISO45001.png"
+      sertificate:
+        - "/images/ISO45001.png"
     - title: SMK3
       image:
         light: "/images/logo/smk3.png"
         dark: "/images/logo/smk3.png"
+      sertificate:
+        - "/images/smk3.png"
 
 pricing:
-  title: Choose your [productivity]{.text-primary} path
-  description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
-  plans:
-    - title: Pro Developer
-      description: Perfect for individual developers focused on maximizing productivity.
-      price: $199
-      features:
-        - AI productivity tracking to optimize your peak coding hours
-        - Smart distraction alerts to maintain deep focus
-        - Personal code snippet library for faster development
-        - Deep Work Mode with Pomodoro timer integration
-        - Performance analytics dashboard
-        - Priority email support
-      button:
-        label: Buy now
-        color: neutral
-        variant: outline
-        to: "#"
-    - title: Team Developer
-      description: For bootstrappers and indie hackers.
-      price: $199
-      features:
-        - Everything in Pro Developer
-        - Team productivity analytics and insights
-        - Collaborative code snippet sharing
-        - Cross-team performance tracking
-        - Synchronized deep work sessions
-        - Priority team support with dedicated manager
-      button:
-        label: Buy now
-        variant: subtle
-        to: "#"
+  title: Kepemimpinan Strategis & [Visi Masa Depan]{.text-primary}
+  description: Di balik setiap proyek besar PT Permata Jaya Tehnik, terdapat dewan direksi yang berdedikasi untuk memastikan standar kualitas tertinggi, keselamatan kerja, dan inovasi berkelanjutan dalam setiap solusi infrastruktur elektrikal kami.
+  items:
+    - quote: lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      user:
+        name: "Sarah Moriceau"
+        description: "Brand Designer"
+        target: _blank
+        avatar:
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19"
+    - quote: lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      user:
+        name: "Sébastien Chopin"
+        description: "Lead Software Engineer"
+        target: _blank
+        avatar:
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux"
+    - quote: lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      user:
+        name: "Benjamin Canac"
+        description: "Senior Frontend Developer"
+        target: _blank
+        avatar:
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac"
 testimonials:
-  title: Join thousands of productive [developers]{.text-primary}
-  description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
+  title: Kepemimpinan Strategis & [Visi Masa Depan]{.text-primary}
+  description: Di balik setiap proyek besar PT Permata Jaya Tehnik, terdapat dewan direksi yang berdedikasi untuk memastikan standar kualitas tertinggi, keselamatan kerja, dan inovasi berkelanjutan dalam setiap solusi infrastruktur elektrikal kami.
   items:
     - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
       user:

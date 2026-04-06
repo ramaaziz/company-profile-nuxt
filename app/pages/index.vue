@@ -1,4 +1,6 @@
 <script setup>
+import { steps } from "#build/ui/prose";
+
 const { data: page } = await useAsyncData("index", () =>
   queryCollection("content").first(),
 );
@@ -7,6 +9,13 @@ const selectedItem = ref({});
 const openModal = (features) => {
   selectedItem.value = features;
   isOpen.value = true;
+};
+const isOpen2 = ref(false);
+const selectedItem2 = ref({});
+const openModal2 = (step) => {
+  selectedItem2.value = step;
+  isOpen2.value = true;
+  console.log(selectedItem2.value);
 };
 if (!page.value) {
   throw createError({
@@ -83,6 +92,7 @@ useSeoMeta({
       :ui="{
         title: 'text-left @container relative flex',
         description: 'text-left',
+        features: 'grid grid-cols-2 sm:grid-cols-3 gap-8',
       }"
       class="relative overflow-hidden"
     >
@@ -104,8 +114,11 @@ useSeoMeta({
         <UPageCard
           v-for="(features, index) in page.features.items"
           :key="index"
-          class="group"
-          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
+          class="group cursor-pointer"
+          :ui="{
+            container: 'p-4 sm:p-4',
+            title: 'flex items-center gap-1',
+          }"
           spotlight
           spotlight-color="primary"
           @click="openModal(features)"
@@ -115,17 +128,18 @@ useSeoMeta({
             :light="features.image?.light"
             :dark="features.image?.dark"
             :alt="features.title"
-            class="size-full rounded-lg"
+            class="size-full rounded-lg transition-transform group-hover:scale-105 duration-300"
           />
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
               {{ features.title }}
             </span>
-            <span class="text-sm text-muted">
+            <span class="text-sm text-muted hidden sm:block">
               {{ features.description }}
             </span>
           </div>
         </UPageCard>
+
         <UModal v-model:open="isOpen">
           <template #content>
             <UCard>
@@ -179,8 +193,8 @@ useSeoMeta({
       :features="page.steps.sertifikasi"
       orientation="horizontal"
       :ui="{
-        container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
-        features: 'gap-0 pl-5',
+        container: 'lg:px-8 2xl:px-20 mx-0 max-w-none md:mr-10',
+        features: 'gap-0',
       }"
     >
       <template #headline>
@@ -191,24 +205,27 @@ useSeoMeta({
         />
       </template>
       <template #title>
-        <MDC :value="page.steps.title" class="sm:*:leading-11 pl-5" />
+        <MDC :value="page.steps.title" class="sm:*:leading-11" />
       </template>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 sm:grid-cols-2 gap-4">
         <UPageCard
           v-for="(step, index) in page.steps.items"
           :key="index"
-          class="group"
+          class="group cursor-pointer"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
+          spotlight
+          spotlight-color="primary"
+          @click="openModal2(step)"
         >
           <UColorModeImage
             v-if="step.image"
             :light="step.image?.light"
             :dark="step.image?.dark"
             :alt="step.title"
-            class="size-full rounded-lg"
+            class="w-full object-cover aspect-square transition-transform group-hover:scale-105 duration-300"
           />
 
-          <div class="flex flex-col gap-2">
+          <div class="text-center gap-2">
             <span class="text-lg font-semibold">
               {{ step.title }}
             </span>
@@ -217,6 +234,40 @@ useSeoMeta({
             </span>
           </div>
         </UPageCard>
+        <UModal v-model:open="isOpen2">
+          <template #content>
+            <UCard>
+              <template #header>
+                <div class="flex items-center justify-between">
+                  <h3 class="font-bold text-xl">{{ selectedItem2.title }}</h3>
+                  <UButton
+                    color="gray"
+                    variant="ghost"
+                    icon="i-heroicons-x-mark-20-solid"
+                    class="-my-1"
+                    @click="isOpen2 = false"
+                  />
+                </div>
+              </template>
+
+              <div class="flex items-center justify-center h-96 w-full">
+                <img
+                  :src="selectedItem2.sertificate"
+                  class="rounded-lg max-w-xs max-h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="pt-16">
+                <p
+                  class="text-gray-600 dark:text-gray-400 items-center justify-center text-center"
+                >
+                  {{ selectedItem2.description }}
+                </p>
+              </div>
+            </UCard>
+          </template>
+        </UModal>
       </div>
     </UPageSection>
 
@@ -227,34 +278,35 @@ useSeoMeta({
       :description="page.pricing.description"
       :ui="{ title: 'text-left @container relative', description: 'text-left' }"
     >
+      <template #headline>
+        <UColorModeImage
+          light="/images/light/line-5.svg"
+          dark="/images/dark/line-5.svg"
+          class="absolute -top-10 sm:top-0 right-1/2 h-24"
+        />
+      </template>
       <template #title>
-        <MDC :value="page.pricing.title" />
-
-        <div class="hidden @min-[1120px]:block">
-          <UColorModeImage
-            light="/images/light/line-4.svg"
-            dark="/images/dark/line-4.svg"
-            class="absolute top-0 right-0 size-full transform translate-x-[60%]"
-          />
-        </div>
+        <MDC :value="page.testimonials.title" />
       </template>
 
-      <UPricingPlans scale>
-        <UPricingPlan
-          v-for="(plan, index) in page.pricing.plans"
-          :key="index"
-          :title="plan.title"
-          :description="plan.description"
-          :price="plan.price"
-          :billing-period="plan.billing_period"
-          :billing-cycle="plan.billing_cycle"
-          :highlight="plan.highlight"
-          :scale="plan.highlight"
-          variant="soft"
-          :features="plan.features"
-          :button="plan.button"
-        />
-      </UPricingPlans>
+      <UContainer>
+        <UPageColumns class="xl:columns-3">
+          <UPageCard
+            v-for="(testimonial, index) in page.testimonials.items"
+            :key="index"
+            variant="subtle"
+            :description="testimonial.quote"
+            :ui="{
+              description:
+                'before:content-[open-quote] after:content-[close-quote]',
+            }"
+          >
+            <template #footer>
+              <UUser v-bind="testimonial.user" size="xl" />
+            </template>
+          </UPageCard>
+        </UPageColumns>
+      </UContainer>
     </UPageSection>
 
     <UPageSection
