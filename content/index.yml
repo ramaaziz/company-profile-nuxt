@@ -258,15 +258,10 @@ testimonials:
     - quote: "/images/team/team30.jpg"
 
 cta:
-  title: Ready to build an amazing landing page?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
+  title: Menjadi Mitra Strategis dalam [Pembangunan Nasional]{.text-primary}
+  description: Bergabunglah dengan puluhan mitra yang telah mempercayakan instalasi elektrikal mereka kepada kami. Kami hadir untuk memastikan setiap proyek selesai tepat waktu dengan kualitas tanpa kompromi.
   links:
-    - label: Start building
-      to: "https://ui.nuxt.com/docs/getting-started/installation/nuxt"
+    - label: Hubungi Kami
+      to: "https://wa.me/6281326952289"
       target: _blank
-      trailingIcon: i-lucide-arrow-right
-    - label: View on GitHub
-      to: "https://github.com/nuxt-ui-templates/landing"
-      target: _blank
-      variant: subtle
-      icon: i-simple-icons-github
+      icon: i-heroicons-chat-bubble-left-right
