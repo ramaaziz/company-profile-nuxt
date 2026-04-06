@@ -276,7 +276,10 @@ useSeoMeta({
       class="mb-32 overflow-hidden"
       :title="page.pricing.title"
       :description="page.pricing.description"
-      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
+      :ui="{
+        title: 'text-left @container relative',
+        description: 'text-center',
+      }"
     >
       <template #headline>
         <UColorModeImage
@@ -284,15 +287,20 @@ useSeoMeta({
           dark="/images/dark/line-5.svg"
           class="absolute -top-10 sm:top-0 right-1/2 h-24"
         />
+        <UColorModeImage
+          light="/logos/logo-pjt.png"
+          dark="/logos/logo-pjt.png"
+          class="absolute left-1/2 -translate-x-1/2 pointer-events-none object-cover h-[250px] sm:h-[560px] opacity-50"
+        />
       </template>
       <template #title>
-        <MDC :value="page.testimonials.title" />
+        <MDC :value="page.pricing.title" />
       </template>
 
       <UContainer>
         <UPageColumns class="xl:columns-3">
           <UPageCard
-            v-for="(testimonial, index) in page.testimonials.items"
+            v-for="(testimonial, index) in page.pricing.items"
             :key="index"
             variant="subtle"
             :description="testimonial.quote"
@@ -327,22 +335,22 @@ useSeoMeta({
       </template>
 
       <UContainer>
-        <UPageColumns class="xl:columns-3">
-          <UPageCard
-            v-for="(testimonial, index) in page.testimonials.items"
-            :key="index"
-            variant="subtle"
-            :description="testimonial.quote"
-            :ui="{
-              description:
-                'before:content-[open-quote] after:content-[close-quote]',
-            }"
-          >
-            <template #footer>
-              <UUser v-bind="testimonial.user" size="xl" />
-            </template>
-          </UPageCard>
-        </UPageColumns>
+        <UCarousel
+          v-slot="{ item }"
+          loop
+          dots
+          :autoplay="{ delay: 2000 }"
+          :items="page.testimonials.items"
+          :ui="{ item: 'basis-1/3' }"
+        >
+          <img
+            :src="item.quote"
+            width="234"
+            height="234"
+            class="rounded-lg"
+            loading="lazy"
+          />
+        </UCarousel>
       </UContainer>
     </UPageSection>
 

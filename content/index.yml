@@ -223,30 +223,40 @@ pricing:
         avatar:
           src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac"
 testimonials:
-  title: Kepemimpinan Strategis & [Visi Masa Depan]{.text-primary}
-  description: Di balik setiap proyek besar PT Permata Jaya Tehnik, terdapat dewan direksi yang berdedikasi untuk memastikan standar kualitas tertinggi, keselamatan kerja, dan inovasi berkelanjutan dalam setiap solusi infrastruktur elektrikal kami.
+  title: Kekuatan Utama [Tim Kami]{.text-primary}
+  description: Menghadirkan tenaga ahli yang kompeten di bidang konstruksi elektrikal, mulai dari perencanaan strategis hingga eksekusi teknis di lapangan.
   items:
-    - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
-      user:
-        name: "Sarah Moriceau"
-        description: "Brand Designer"
-        target: _blank
-        avatar:
-          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19"
-    - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
-      user:
-        name: "Sébastien Chopin"
-        description: "Lead Software Engineer"
-        target: _blank
-        avatar:
-          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux"
-    - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
-      user:
-        name: "Benjamin Canac"
-        description: "Senior Frontend Developer"
-        target: _blank
-        avatar:
-          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac"
+    - quote: "/images/team/team1.jpg"
+    - quote: "/images/team/team2.jpg"
+    - quote: "/images/team/team3.jpg"
+    - quote: "/images/team/team4.jpg"
+    - quote: "/images/team/team5.jpg"
+    - quote: "/images/team/team6.jpg"
+    - quote: "/images/team/team7.jpg"
+    - quote: "/images/team/team8.jpg"
+    - quote: "/images/team/team9.jpg"
+    - quote: "/images/team/team10.jpg"
+    - quote: "/images/team/team11.jpg"
+    - quote: "/images/team/team12.jpg"
+    - quote: "/images/team/team13.jpg"
+    - quote: "/images/team/team14.jpg"
+    - quote: "/images/team/team15.jpg"
+    - quote: "/images/team/team16.jpg"
+    - quote: "/images/team/team17.jpg"
+    - quote: "/images/team/team18.jpg"
+    - quote: "/images/team/team19.jpg"
+    - quote: "/images/team/team20.jpg"
+    - quote: "/images/team/team21.jpg"
+    - quote: "/images/team/team22.jpg"
+    - quote: "/images/team/team23.jpg"
+    - quote: "/images/team/team24.jpg"
+    - quote: "/images/team/team25.jpg"
+    - quote: "/images/team/team26.jpg"
+    - quote: "/images/team/team27.jpg"
+    - quote: "/images/team/team28.jpg"
+    - quote: "/images/team/team29.jpg"
+    - quote: "/images/team/team30.jpg"
+
 cta:
   title: Ready to build an amazing landing page?
   description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.

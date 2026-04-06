@@ -16,7 +16,7 @@ const items = computed(() => [
     active: activeHeadings.value.includes("steps"),
   },
   {
-    label: "Testimonials",
+    label: "Team",
     to: "#testimonials",
     active:
       activeHeadings.value.includes("testimonials") &&
